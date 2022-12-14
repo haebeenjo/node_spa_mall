@@ -46,7 +46,7 @@ const goods = [
   router.get("/goods/:goodsId",(req,res) => {
     const { goodsId } = req.params;
     // const result = await Goods.find({goodsId}); Rl
-    const [detail] = goods.filter((good) => Number(goodsId) === good.goodsId);
+    const [detail] = goods.filter((goods) => Number(goodsId) === good.goodsId);
 
     res.status(200).json({ detail });
   });
