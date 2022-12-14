@@ -114,4 +114,5 @@ const goods = [
     res.json({goods: createdGoods});
   })
 
+  
 module.exports = router; //router라는 변수를 module.exports를 통해서 밖으로 내보냄
